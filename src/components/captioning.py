@@ -37,11 +37,4 @@ class CaptioningComponent:
             logging.error(f"Inference Error: {e}")
             raise CustomException(e, sys)
 
-if __name__ == "__main__":
-    try:
-        captioning_component = CaptioningComponent()
-        img_path = "/home/prem/vamshi/Image_captioning/1347185.png"
-        caption = captioning_component.generate_caption(img_path)
-        print(f"Generated Caption: {caption}")
-    except Exception as e:
-        print(f"Pipeline failed: {e}")
+}")
