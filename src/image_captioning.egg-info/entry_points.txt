@@ -1,0 +1,2 @@
+[console_scripts]
+image-captioning-infer = image_captioning.inference:main

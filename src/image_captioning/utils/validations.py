@@ -1,4 +1,4 @@
-from src.constants import MAX_FILE_SIZE, ALLOWED_MIME_TYPES
+from image_captioning.constants import MAX_FILE_SIZE, ALLOWED_MIME_TYPES
 from fastapi import HTTPException
 import magic  # For MIME type detection
 

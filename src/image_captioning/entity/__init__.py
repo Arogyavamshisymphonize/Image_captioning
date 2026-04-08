@@ -1,6 +1,6 @@
-from src.logger import logging
-from src.exceptions import CustomException
-from src.constants import CAPTIONING_MODEL
+from image_captioning.logger import logging
+from image_captioning.exceptions import CustomException
+from image_captioning.constants import CAPTIONING_MODEL
 
 class Entity:
     def __init__(self):

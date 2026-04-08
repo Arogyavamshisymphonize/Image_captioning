@@ -1,0 +1,59 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-captioning"
+version = "1.0.0"
+description = "Image captioning using BLIP (Transformers-based)"
+readme = "README.md"
+requires-python = ">=3.8"
+
+authors = [
+    { name = "Vamshi", email = "arogyavamshi2002@gmail.com" }
+]
+
+license = { text = "MIT" }
+
+keywords = ["image-captioning", "transformers", "blip", "deep-learning"]
+
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+
+# ✅ Keep core dependencies LIGHT
+dependencies = [
+    "transformers>=4.30.0",
+    "pillow>=9.0.0",
+    "requests>=2.28.0"
+]
+
+# ✅ Optional dependencies (clean separation)
+[project.optional-dependencies]
+ml = [
+    "torch",
+    "torchvision"
+]
+
+# ✅ CLI entry point
+[project.scripts]
+image-captioning-infer = "image_captioning.inference:main"
+
+# ✅ Package discovery (src layout)
+[tool.setuptools.packages.find]
+where = ["src"]
+
+# ✅ Include non-code files if needed
+[tool.setuptools.package-data]
+"*" = ["*.txt", "*.md"]
+
+# ✅ Project URLs (important for PyPI trust)
+[project.urls]
+Homepage = "https://github.com/Arogyavamshisymphonize/Image_captioning"
+Repository = "https://github.com/Arogyavamshisymphonize/Image_captioning"
+Issues = "https://github.com/Arogyavamshisymphonize/Image_captioning/issues"

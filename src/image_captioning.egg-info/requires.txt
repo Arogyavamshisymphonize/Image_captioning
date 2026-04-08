@@ -1,0 +1,7 @@
+transformers>=4.30.0
+pillow>=9.0.0
+requests>=2.28.0
+
+[ml]
+torch
+torchvision

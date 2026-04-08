@@ -1,5 +1,5 @@
-from src.exceptions import CustomException
-from src.logger import logging
+from image_captioning.exceptions import CustomException
+from image_captioning.logger import logging
 import sys
 from PIL import Image
 

@@ -3,9 +3,9 @@ import sys
 from PIL import Image
 import torch
 
-from src.logger import logging
-from src.exceptions import CustomException
-from src.utils.models import CaptioningModel
+from image_captioning.logger import logging
+from image_captioning.exceptions import CustomException
+from image_captioning.utils.models import CaptioningModel
 
 
 class CaptioningComponent:
@@ -36,5 +36,3 @@ class CaptioningComponent:
         except Exception as e:
             logging.error(f"Inference Error: {e}")
             raise CustomException(e, sys)
-
-}")

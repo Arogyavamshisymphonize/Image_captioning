@@ -4,9 +4,9 @@ import torch
 from transformers import BlipProcessor, BlipForConditionalGeneration
 
 # Assuming these imports exist in your project
-from src.logger import logging
-from src.exceptions import CustomException
-from src.entity import Entity, CaptioningEntity
+from image_captioning.logger import logging
+from image_captioning.exceptions import CustomException
+from image_captioning.entity import Entity, CaptioningEntity
 
 # --- MODEL COMPONENT ---
 class CaptioningModel:

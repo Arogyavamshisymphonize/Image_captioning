@@ -1,9 +1,9 @@
 from contextlib import asynccontextmanager
 from fastapi import FastAPI
-from src.utils.app_state import AppState
-from src.utils.models import CaptioningModel
-from src.components.captioning import CaptioningComponent
-from src.logger import logging
+from image_captioning.utils.app_state import AppState
+from image_captioning.utils.models import CaptioningModel
+from image_captioning.components.captioning import CaptioningComponent
+from image_captioning.logger import logging
 
 state = AppState()
 
